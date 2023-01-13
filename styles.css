@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+:root {
+    --height: 0em;
+    --body: #C3E0E5;
+    --footer_header: #274472;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    background-color: var(--body);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: var(--footer_header);
+    color: var(--body);
+}
+
+.usuario {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 10px;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+img {
+    height: 180px;
+}
+
+h1 {
+    font-size: 45px;
+}
+
+.theme button {
+    width: 2.5em;
+    height: 2.5em;
+    font-family: 'Roboto';
+    color: #090909;
+    background: #e8e8e8;
+    padding: 0.5em;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 1px 1px 4px #c5c5c5,
+               -1px -1px 4px #ffffff;
+}
+
+.theme button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+}
+
+.titulos h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.datos p {
+    font-size: 20px;
+}
+
+article {
+    padding: 1em;
+    font-size: 18px;
+}
+
+.acordeon {
+    width: 90%;
+    max-width: 120em;
+}
+
+.acordeon .bloque {
+    margin: 0 0 1em;
+    padding: 1em;
+}
+
+.acordeon .h2 {
+    margin: 0 0 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.acordeon .h2 i {
+    margin-right: 1em;
+    transition: all .5s ease;
+}
+
+.acordeon .contenido {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all .5s ease;
+    font-size: 18px;
+}
+
+.acordeon .bloque.activo .contenido {
+    height: var(--height);
+    padding: 0 2em;
+}
+
+.acordeon .bloque.activo h2 i{
+    transform: rotate(180deg);
+}
+
+footer {
+    background-color: var(--footer_header);
+}
+
+.form_dato {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    padding: 1em;
+}
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 1px 1px 4px #c5c5c5,
+                -1px -1px 4px #ffffff;
+    transition: 0.3s;
+}
+.input:focus {
+    outline-color: #e8e8e8;
+    background: #e8e8e8;
+    box-shadow: inset 20px 20px 60px #c5c5c5,
+                inset -20px -20px 60px #ffffff;
+    transition: 0.3s;
+   }
+
+textarea {
+    border: none;
+    padding: 1rem;
+    border-radius: 1rem;
+    background: #e8e8e8;
+    box-shadow: 1px 1px 4px #c5c5c5,
+                -1px -1px 4px #ffffff;
+    transition: 0.3s;
+}
+
+button {
+    font-family: 'Roboto';
+    color: #090909;
+    background: #e8e8e8;
+    padding: 0.7em 1.7em;
+    margin: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 1rem;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 1px 1px 4px #c5c5c5,
+               -1px -1px 4px #ffffff;
+}
+
+button:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+   }
+
+.social_media i {
+    font-size: 30px;
+    padding: 20px;
+    color: var(--body);
+}
+
+
+
+
+@media (max-width:768px) {
+    
+    .usuario {
+        gap: 30px;
+        padding: 10px;
+    }
+    
+    
+    img {
+        height: 130px;
+    }
+    
+    h1 {
+        font-size: 25px;
+    }
+    
+    .theme button {
+        width: 2em;
+        height: 2em;
+        padding: 0;
+        margin: 0px;
+        font-size: 17px;
+    }
+    
+    .titulos h2 {
+        font-size: 20px;
+    }
+    
+    .datos p {
+        font-size: 15px;
+    }
+    
+    article {
+        font-size: 15px;
+    }
+
+    .acordeon .h2 {
+        font-size: 20px;
+    }
+    
+    .acordeon .contenido {
+        font-size: 15px;
+    }
+    
+    
+    .form_dato {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        padding: 1em;
+    }
+    
+    form {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
+    input {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    
+    textarea {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    
+    button {
+        padding: 0.5rem 1.5em;
+        margin: 0 15px 0 0;
+        font-size: 15px;
+        border-radius: 0.5rem;
+    }
+    
+    .social_media i {
+        font-size: 25px;
+        padding: 20px;
+        color: var(--body);
+    }
+}
+
+
+
+
+@media (max-width:425px) {
+    .usuario {
+        gap: 15px;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    
+    img {
+        height: 100px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+    
+    .theme button {
+        width: 2em;
+        height: 2em;
+        padding: 0;
+        margin: 10px 10px 0 0;
+        font-size: 17px;
+    }
+    
+    .titulos h2 {
+        font-size: 17px;
+    }
+    
+    .datos p {
+        font-size: 15px;
+    }
+    
+    article {
+        font-size: 15px;
+    }
+    
+    .acordeon .h2 {
+        font-size: 17px;
+    }
+    
+    .acordeon .h2 i {
+        margin-right: 1em;
+        transition: all .5s ease;
+    }
+    
+    .acordeon .contenido {
+        font-size: 15px;
+    }
+    
+    .form_dato {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        padding: 1em;
+    }
+    
+    form {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+    }
+    
+    input {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    
+    textarea {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    
+    button {
+        padding: 0.5rem 1.5em;
+        margin: 15px;
+        font-size: 15px;
+        border-radius: 0.5rem;
+    }
+    
+    .social_media i {
+        font-size: 20px;
+        padding: 15px;
+        color: var(--body);
+    }
+}
+
+
+
+
+@media (max-width:425px) {
+    .usuario {
+        gap: 10px;
+    }
+    
+    .form_dato {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 10px;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    input {
+        margin: 10px 0 10px 0;
+    }
+    
+    textarea {
+        margin: 10px 0 10px 0;
+    }
+}
