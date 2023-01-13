@@ -1,6 +1,7 @@
 let style = document.documentElement.style;
 let bloque = document.querySelectorAll('.bloque');
 let h2 = document.querySelectorAll('.h2');
+let theme = document.querySelector('.theme');
 
 h2.forEach ((cada_h2, i)=>{
     h2[i].addEventListener('click', ()=>{
@@ -12,10 +13,10 @@ h2.forEach ((cada_h2, i)=>{
         
         switch (i) {
             case 0:
-                style.setProperty('--height', '9em');
+                style.setProperty('--height', '8em');
                 break;
             case 1:
-                style.setProperty('--height', '7.5em');
+                style.setProperty('--height', '8em');
                 break;
             case 2:
                 style.setProperty('--height', '8em');
@@ -26,7 +27,8 @@ h2.forEach ((cada_h2, i)=>{
     });
 });
 
-const switch_theme = () =>{
+theme.onclick = function(){
+    theme.classList.toggle('activo');
     if(style.getPropertyValue('--body')=='#C3E0E5'){
         style.setProperty('--body', '#90ADC6');
         style.setProperty('--footer_header','#333652');
