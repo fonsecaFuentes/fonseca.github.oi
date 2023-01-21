@@ -1,3 +1,16 @@
+
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service_worker.js')
+        .then(function (registration) {
+            console.log('Service Worker registered: ', registration);
+        })
+        .catch(function (err) {
+            console.log('Service Worker registration failed: ', err);
+        });
+}
+
+
+
 let style = document.documentElement.style;
 let bloque = document.querySelectorAll('.bloque');
 let h2 = document.querySelectorAll('.h2');
@@ -36,32 +49,25 @@ const list_user = async() =>{
     let user_data = data.results[0];
     
     img_user.innerHTML += 
-    `<img src="${user_data.picture.large}" alt="Imagen Perfil">`;
+    `<img src="${user_data.picture.large}" alt="Imagen_Perfil">`;
     
     name_user.innerHTML += 
     `<h1>${user_data.name.first}</h1>
-    <h1>${user_data.name.last}</h1>`;
+     <h1>${user_data.name.last}</h1>`;
     
     data_user.innerHTML +=
     `<p>País: ${user_data.location.country}</p>
-    <p>Ciudad: ${user_data.location.city}</p>
-    <p>Direción: ${user_data.location.street.name} ${user_data.location.street.number}</p>
-    <p>Teléfono: ${user_data.cell}</p>
-    <p>Email: ${user_data.email}</p>`;
+     <p>Ciudad: ${user_data.location.city}</p>
+     <p>Direción: ${user_data.location.street.name} ${user_data.location.street.number}</p>
+     <p>Teléfono: ${user_data.cell}</p>
+     <p>Email: ${user_data.email}</p>`;
 }
 
 const load_data_user = async()=>{
     const response = await fetch('./json/data_user.json');
     const data = await response.json();
     let other_data = data[0];
-    console.log(other_data);
-    let experience = (other_data.company).length;
-    console.log(experience);
-    let education = (other_data.university).length;
-    console.log(education);
-    let skill = (other_data.skill).length;
-    console.log(skill);
-
+    
     job_user.innerHTML += 
     `<h2>${other_data.job}</h2>`;
 

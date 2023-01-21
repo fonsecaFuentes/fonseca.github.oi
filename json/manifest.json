@@ -1,0 +1,24 @@
+{
+    "name": "Curriculum Vitae",
+    "short_name": "CV",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "prefer_related_applications": true,
+    "related_applications": [
+        {
+            "platform": "play",
+            "id": "com.google.samples.apps.iosched"
+        }
+    ],
+    "icons": [
+        {
+            "src": "../img/icono.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#000000",
+    "background_color": "#ffffff",
+    "orientation": "portrait",
+    "scope": "/"
+}

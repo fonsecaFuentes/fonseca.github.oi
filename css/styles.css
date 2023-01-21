@@ -30,24 +30,13 @@ header {
     padding: 10px;
 }
 
-.titulos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.datos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 img {
     height: 180px;
 }
 
-h1 {
+.name h1 {
     font-size: 45px;
+    text-transform: uppercase;
 }
 
 .theme {
@@ -79,7 +68,7 @@ h1 {
     left: 40px;
 }
 
-.titulos h2 {
+.job h2 {
     font-size: 30px;
     text-transform: uppercase;
 }
@@ -118,7 +107,7 @@ article {
     max-height: 0;
     padding: 0;
     overflow: hidden;
-    transition: max-height .7s ease-out, opacity .7s linear;
+    transition: max-height .5s ease-out, opacity .5s linear;
     font-size: 18px;
     opacity: 0;
 }
@@ -223,11 +212,11 @@ button:active {
         height: 130px;
     }
     
-    h1 {
+    .name h1 {
         font-size: 25px;
     }
     
-    .titulos h2 {
+    .job h2 {
         font-size: 20px;
     }
     
@@ -247,7 +236,7 @@ button:active {
         font-size: 20px;
     }
     
-    .acordeon .contenido {
+    .acordeon .contenido_1, .acordeon .contenido_2, .acordeon .contenido_3 {
         font-size: 15px;
     }
     
@@ -305,7 +294,7 @@ button:active {
         height: 100px;
     }
     
-    h1 {
+    .name h1 {
         font-size: 20px;
     }
 
@@ -326,7 +315,7 @@ button:active {
         left: 26px;
     }
     
-    .titulos h2 {
+    .job h2 {
         font-size: 17px;
     }
     
@@ -347,7 +336,7 @@ button:active {
         transition: all .5s ease;
     }
     
-    .acordeon .contenido {
+    .acordeon .contenido_1, .acordeon .contenido_2, .acordeon .contenido_3 {
         font-size: 13px;
     }
     
