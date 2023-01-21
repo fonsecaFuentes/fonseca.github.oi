@@ -1,5 +1,4 @@
 :root {
-    --height: 0em;
     --body: #C3E0E5;
     --footer_header: #274472;
 }
@@ -10,10 +9,6 @@
     padding: 0;
     border: 0;
     font-family: 'Overpass Mono', monospace;
-}
-
-li {
-    list-style-type: none;
 }
 
 body {
@@ -119,17 +114,21 @@ article {
     transition: all .5s ease;
 }
 
-.acordeon .contenido {
-    height: 0;
+.acordeon .contenido_1, .acordeon .contenido_2, .acordeon .contenido_3 {
+    max-height: 0;
     padding: 0;
     overflow: hidden;
-    transition: all .5s ease;
+    transition: max-height .7s ease-out, opacity .7s linear;
     font-size: 18px;
+    opacity: 0;
 }
 
-.acordeon .bloque.activo .contenido {
-    height: var(--height);
+.acordeon .bloque.activo .contenido_1, .acordeon .bloque.activo .contenido_2, .acordeon .bloque.activo .contenido_3 {
+    max-height: 500px;
+    height: auto;
     padding: 0 2em;
+    transition: max-height .5s ease-in, opacity .5s linear;
+    opacity: 1;
 }
 
 .acordeon .bloque.activo h2 i{
