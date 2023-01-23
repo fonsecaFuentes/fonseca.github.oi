@@ -1,4 +1,6 @@
 
+
+// Configurar service_worker
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('service_worker.js')
         .then(function (registration) {
@@ -24,7 +26,7 @@ let experiences = document.querySelector('.contenido_1');
 let educations = document.querySelector('.contenido_2');
 let skills = document.querySelector('.contenido_3');
 
-
+//creamos un acordeon
 h2.forEach ((cada_h2, i)=>{
     h2[i].addEventListener('click', ()=>{
 
@@ -32,6 +34,8 @@ h2.forEach ((cada_h2, i)=>{
     });
 });
 
+
+//Cambio thema 
 theme.onclick = function(){
     theme.classList.toggle('activo');
     if(style.getPropertyValue('--body')=='#90ADC6'){
@@ -43,6 +47,7 @@ theme.onclick = function(){
     }
 };
 
+//Consumo api Rest https://randomuser.me
 const list_user = async() =>{
     const response = await fetch("https://randomuser.me/api?inc=name,email,location,cell,picture");
     const data = await response.json();
@@ -63,6 +68,7 @@ const list_user = async() =>{
      <p>Email: ${user_data.email}</p>`;
 }
 
+//Consumo de JSON en local
 const load_data_user = async()=>{
     const response = await fetch('./json/data_user.json');
     const data = await response.json();

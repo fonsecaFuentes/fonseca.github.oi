@@ -1,5 +1,7 @@
+//Cache
 const STATIC_CACHE = "static";
 
+//Archivos a guardar
 const APP_SHELL = [
     "/",
     "index.html",
@@ -9,6 +11,7 @@ const APP_SHELL = [
     "img/icono.png",
 ];
 
+//Guardamos en caché
 self.addEventListener("install", (e) => {
     const cache_static = caches
         .open(STATIC_CACHE)
@@ -17,7 +20,7 @@ self.addEventListener("install", (e) => {
     e.waitUntil(cache_static);
 });
 
-
+//Comprobar si la peticiones están dentro del caché, y válida de donde toma esos datos
 self.addEventListener("fetch", (e) =>{
     console.log("fetch", e.request);
 
