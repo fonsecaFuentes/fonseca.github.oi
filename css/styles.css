@@ -31,7 +31,9 @@ header {
 }
 
 img {
-    height: 180px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
 .name h1 {
@@ -191,9 +193,17 @@ button:active {
                 inset -4px -4px 12px #ffffff;
    }
 
-.social_media i {
+.social_media {
+    display: flex;
+}
+
+.social_media a {
+    margin: 10px;
+}
+
+.social_media a i {
     font-size: 30px;
-    padding: 20px;
+    padding: 5px;
     color: var(--body);
 }
 
@@ -273,9 +283,13 @@ button:active {
         border-radius: 0.5rem;
     }
     
-    .social_media i {
-        font-size: 25px;
-        padding: 20px;
+    .social_media a {
+        margin: 10px;
+    }
+    
+    .social_media a i {
+        font-size: 30px;
+        padding: 5px;
         color: var(--body);
     }
 }
@@ -372,9 +386,17 @@ button:active {
         border-radius: 0.5rem;
     }
     
-    .social_media i {
-        font-size: 20px;
-        padding: 15px;
+    .social_media {
+        justify-content: center;
+    }
+
+    .social_media a {
+        margin: 5px;
+    }
+    
+    .social_media a i {
+        font-size: 25px;
+        padding: 5px;
         color: var(--body);
     }
 }
