@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@400;500&display=swap');
+
 :root {
     --body: #C3E0E5;
     --footer_header: #274472;
@@ -26,19 +28,31 @@ header {
 .usuario {
     display: flex;
     align-items: center;
-    gap: 50px;
     padding: 10px;
 }
 
+.img, .data, .datos {
+    margin: 10px;
+}
+
 img {
-    width: 100%;
+    min-width: 100%;
     height: auto;
     border-radius: 5px;
 }
 
 .name h1 {
-    font-size: 45px;
+    font-size: 35px;
     text-transform: uppercase;
+}
+
+.job h2 {
+    font-size: 27px;
+    text-transform: uppercase;
+}
+
+.datos p {
+    font-size: 20px;
 }
 
 .theme {
@@ -68,15 +82,6 @@ img {
 
 .theme.activo i {
     left: 40px;
-}
-
-.job h2 {
-    font-size: 30px;
-    text-transform: uppercase;
-}
-
-.datos p {
-    font-size: 20px;
 }
 
 article {
@@ -210,102 +215,10 @@ button:active {
 
 
 
-@media (max-width:768px) {
+@media (min-width:768px) and (max-width: 1023px) {
     
     .usuario {
-        gap: 30px;
-        padding: 10px;
-    }
-    
-    
-    img {
-        height: 130px;
-    }
-    
-    .name h1 {
-        font-size: 25px;
-    }
-    
-    .job h2 {
-        font-size: 20px;
-    }
-    
-    .datos p {
-        font-size: 15px;
-    }
-
-    .theme.activo i {
-        left: 34px;
-    }
-    
-    article {
-        font-size: 15px;
-    }
-
-    .acordeon .h2 {
-        font-size: 20px;
-    }
-    
-    .acordeon .contenido_1, .acordeon .contenido_2, .acordeon .contenido_3 {
-        font-size: 15px;
-    }
-    
-    
-    .form_dato {
-        display: grid;
-        grid-template-columns: auto auto auto auto;
-        justify-content: flex-start;
         align-items: center;
-        gap: 20px;
-        padding: 1em;
-    }
-    
-    form {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-    
-    input {
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-    }
-    
-    textarea {
-        padding: 0.5rem;
-        border-radius: 0.5rem;
-    }
-    
-    button {
-        padding: 0.5rem 1.5em;
-        margin: 0 15px 0 0;
-        font-size: 15px;
-        border-radius: 0.5rem;
-    }
-    
-    .social_media a {
-        margin: 10px;
-    }
-    
-    .social_media a i {
-        font-size: 30px;
-        padding: 5px;
-        color: var(--body);
-    }
-}
-
-
-
-
-@media (max-width:425px) {
-    .usuario {
-        gap: 10px;
-        flex-direction: column;
-        align-items: baseline;
-    }
-    
-    img {
-        height: 100px;
     }
     
     .name h1 {
@@ -335,6 +248,210 @@ button:active {
     
     .datos p {
         font-size: 15px;
+    }
+    
+    article {
+        font-size: 15px;
+    }
+    
+    .acordeon .h2 {
+        font-size: 15px;
+    }
+    
+    .acordeon .h2 i {
+        margin-right: 1em;
+        transition: all .5s ease;
+    }
+    
+    .acordeon .contenido_1, .acordeon .contenido_2, .acordeon .contenido_3 {
+        font-size: 13px;
+    }
+    
+    .form_dato {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        gap: 20px;
+        padding: 1em;
+    }
+    
+    form {
+        display: grid;
+        grid-template-columns: auto auto;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    input {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    
+    textarea {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    
+    button {
+        padding: 0.5rem 0.5em;
+        margin: 1rem;
+        font-size: 15px;
+        border-radius: 0.5rem;
+    }
+    
+    .social_media {
+        justify-content: space-around;
+    }
+
+    .social_media a {
+        margin: 5px;
+    }
+    
+    .social_media a i {
+        font-size: 25px;
+        padding: 5px;
+        color: var(--body);
+    }
+}
+
+
+
+
+@media (min-width:425px) and (max-width: 767px) {
+    .usuario {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    
+    .name h1 {
+        font-size: 20px;
+    }
+
+    .job h2 {
+        font-size: 17px;
+    }
+    
+    .datos p {
+        font-size: 15px;
+    }
+
+    .theme {
+        width: 46px;
+        height: 26px;
+    }
+    
+    .theme i {
+        font-size: 19px;
+        top: 3px;
+        left: 3px;
+        width: 22px;
+        height: 22px;
+    }
+    
+    .theme.activo i {
+        left: 26px;
+    }
+    
+    article {
+        font-size: 15px;
+    }
+    
+    .acordeon .h2 {
+        font-size: 15px;
+    }
+    
+    .acordeon .h2 i {
+        margin-right: 1em;
+        transition: all .5s ease;
+    }
+    
+    .acordeon .contenido_1, .acordeon .contenido_2, .acordeon .contenido_3 {
+        font-size: 13px;
+    }
+    
+    .form_dato {
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 20px;
+        padding: 1em;
+    }
+    
+    form {
+        display: grid;
+        grid-template-columns: auto;
+        align-items: center;
+    }
+    
+    input {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    
+    textarea {
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+    }
+    
+    button {
+        padding: 0.5rem 1.5em;
+        margin: 15px;
+        font-size: 15px;
+        border-radius: 0.5rem;
+    }
+    
+    .social_media {
+        justify-content: center;
+    }
+
+    .social_media a {
+        margin: 5px;
+    }
+    
+    .social_media a i {
+        font-size: 25px;
+        padding: 5px;
+        color: var(--body);
+    }
+}
+
+
+
+
+@media (max-width:424px) {
+    .usuario {
+        flex-direction: column;
+        align-items: baseline;
+    }
+    
+    .name h1 {
+        font-size: 17px;
+    }
+
+    .job h2 {
+        font-size: 15px;
+    }
+    
+    .datos p {
+        font-size: 15px;
+    }
+
+    .theme {
+        width: 46px;
+        height: 26px;
+    }
+    
+    .theme i {
+        font-size: 19px;
+        top: 3px;
+        left: 3px;
+        width: 22px;
+        height: 22px;
+    }
+    
+    .theme.activo i {
+        left: 26px;
     }
     
     article {
