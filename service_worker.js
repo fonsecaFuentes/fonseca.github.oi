@@ -6,7 +6,7 @@ const APP_SHELL = [
     "/",
     "index.html",
     "css/styles.css",
-    "index.js",
+    "js/index.js",
     "json/data_user.json",
     "img/icono.png",
 ];

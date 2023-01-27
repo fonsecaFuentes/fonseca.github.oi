@@ -1,7 +1,8 @@
 {
     "name": "Curriculum Vitae",
     "short_name": "CV",
-    "start_url": "./index.html",
+    "start_url": "../index.html",
+    "id": "/fonseca.github.io/json/index.html",
     "display": "standalone",
     "prefer_related_applications": true,
     "related_applications": [
