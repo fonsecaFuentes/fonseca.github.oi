@@ -1,8 +1,10 @@
 
-
 // Configurar service_worker
+let sw_location = "service_worker.js";
+
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('service_worker.js')
+    if(window.location.href.includes("localhost")) sw_location = "/service_worker.js";
+    navigator.serviceWorker.register(sw_location)
         .then(function (registration) {
             console.log('Service Worker registered: ', registration);
         })
