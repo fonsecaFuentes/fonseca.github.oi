@@ -1,6 +1,6 @@
 
 // Configurar service_worker
-let sw_location = "https://fonsecafuentes.github.io/service_worker.js";
+let sw_location = "https://fonsecafuentes.github.io/fonseca.github.oi/service_worker.js";
 
 if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register(sw_location)
