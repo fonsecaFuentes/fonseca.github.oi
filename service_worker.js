@@ -4,7 +4,7 @@ const STATIC_CACHE = "static";
 //Archivos a guardar
 const APP_SHELL = [
     "/",
-    "index.html",
+    "/index.html",
     "css/styles.css",
     "js/index.js",
     "json/data_user.json",
