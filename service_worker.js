@@ -3,12 +3,12 @@ const STATIC_CACHE = "static";
 
 //Archivos a guardar
 const APP_SHELL = [
-    "/",
-    "/index.html",
-    "css/styles.css",
-    "js/index.js",
-    "json/data_user.json",
-    "img/icono.png",
+    "https://fonsecafuentes.github.io/fonseca.github.oi/",
+    "https://fonsecafuentes.github.io/fonseca.github.oi/index.html",
+    "https://fonsecafuentes.github.io/fonseca.github.oi/css/styles.css",
+    "https://fonsecafuentes.github.io/fonseca.github.oi/js/index.js",
+    "https://fonsecafuentes.github.io/fonseca.github.oi/json/data_user.json",
+    "https://fonsecafuentes.github.io/fonseca.github.oi/img/icono.png",
 ];
 
 //Guardamos en caché
