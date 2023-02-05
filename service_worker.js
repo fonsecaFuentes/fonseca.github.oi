@@ -7,8 +7,13 @@ const APP_SHELL = [
     "https://fonsecafuentes.github.io/fonseca.github.oi/css/styles.css",
     "https://fonsecafuentes.github.io/fonseca.github.oi/",
     "https://fonsecafuentes.github.io/fonseca.github.oi/js/index.js",
+    "https://fonsecafuentes.github.io/fonseca.github.oi/js/particles.min.js",
+    "https://fonsecafuentes.github.io/fonseca.github.oi/js/app.js",
     "https://fonsecafuentes.github.io/fonseca.github.oi/json/data_user.json",
+    "https://fonsecafuentes.github.io/fonseca.github.oi/json/particlesjs-config.json",
     "https://fonsecafuentes.github.io/fonseca.github.oi/img/icono.png",
+    "https://fonsecafuentes.github.io/fonseca.github.oi/img/home.png",
+    "https://fonsecafuentes.github.io/fonseca.github.oi/img/pencil.jpg",
 ];
 
 //Guardamos en caché
