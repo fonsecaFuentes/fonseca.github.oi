@@ -78,7 +78,7 @@ nav ul li {
 }
 
 nav ul li:first-child a {
-    background-image: url(/img/home.png);
+    background-image: url(https://fonsecafuentes.github.io/fonseca.github.oi/img/home.png);
     color: var(--body);
     background-size: 24px;
     background-repeat: no-repeat;
@@ -181,7 +181,7 @@ article {
     padding: 1em;
     font-size: 18px;
     color: var(--body);
-    background-image: url(/img/pencil.jpg);
+    background-image: url(https://fonsecafuentes.github.io/fonseca.github.oi/img/pencil.jpg);
 }
 
 article span {
